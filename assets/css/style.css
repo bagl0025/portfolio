@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* :root {
+    --primary-color: white;
+  } */
+
+body {
+    background-color: lightblue;
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: green;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: yellow;
+    margin: 0;
+}
+
+header nav {
+    margin: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: lighter;
+    color: yellow;
+}
+
+header nav ul li a:hover {
+        background: blue;
+        border-radius: 15px;
+        text-shadow: none;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+/* Hero Style */
+
+.hero {
+    padding: 90px;
+    background-image: url("../images/computer.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero h2 {
+    text-align: end;    
+    color: red;
+}
+
+section {
+    padding: 30px;
+}
+
+/* .about {
+    text-align: left;
+} */
+
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.projectitem h3 {
+    text-align: center;
+    color: blueviolet;
+}
+
+.projectitem img {
+    width: 100%;
+}
+
+.project div {
+    flex: 40%;
+    border: 2px solid black;
+    /* margin-bottom: 30px;
+    margin-right: 10%; */
+    /* padding-top: 100px;
+    padding-bottom: 10px; */
+}
+
+.project div:first-child {
+      flex: 85%;
+      margin: 10%;
+      padding-top: 200px;
+      padding-bottom: 20px;
+}
+  
+.contact h2 {
+    color: red;
+}
+
+.contact h3, a {
+    color: green;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* MEDIA QUERY FOR SMALLER SCREENS */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+      }
+    
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+      header nav ul li a {
+        font-size: 20px;
+      }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    section {
+      padding: 30px 15px;
+    }
+  }
+
+  @media screen and (max-width: 575px) {  
+    .contact-info {
+      text-align: center;
+    }
+  }
