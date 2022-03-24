@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* TODO: Look for possible CSS custom properties (vars) */
 /* TODO: Need to check for non chrome browser support */
 
 body {
@@ -16,8 +15,8 @@ body {
 /* header and heading settings */
 header {
     display: flex;
-    background-color: darkblue;
     flex-wrap: wrap;
+    background-color: darkblue;
     color: white;
     align-items: center;
 }
@@ -90,52 +89,45 @@ section {
 .project {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  /* fixes image change when wrapping div in <a> tag */
-.project a {
-    display: flex;
-    text-decoration: none;
+    /* border: green 2px solid; useful for visualizing how project boxes fit into main div*/
 }
 
-.project a:not(.project a:first-child) {
-    flex: 40%;
-}
-
-/* settings for individual project boxes */
-.project div {
-    flex: 40%;
-    border: 2px solid black;
-    margin: 10px; /* space around boxes */
+.project > div {  /* > prevent pass this to children divs, I think */
+    flex: 1 40%;
+    padding: 5px;
+    margin: 5px;
+    /* border: solid red; useful for visualizing individual project boxes */
+    height: 340px; /* setting WxH helps the image scaling */
+    width: 540px;
 }
 
 .project div:first-child {
-    flex: 85%;
+    flex: 1 80%;
 }
-
-/* image settings */
-/* The first image on a row affects the whole row */
-/* need to fix aspect ratio problem */
-.projectitem img {
+  
+.project img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
-/* setup smaller boxes with prj name and languages */
+.project div a:hover {
+    opacity: .5;
+}
+
 .itembox {
-    display: flex;
-    flex-direction: column;
-    background-color: blue;
-    width: fit-content;
-    height: auto;
+    display: inline-block;
     position: relative;
-    bottom: 35%;
+    background-color: blue;
     color: white;
+    bottom: 100px;
+    left: 20px;
+    border-radius: 10px;
+    opacity: .75;
+    padding: 10px;
 }
 
-/* put space around text in box */
-.itembox h3, h4 {
-    margin: 10px;
+.itembox h3 {
     font-size: medium;
 }
 
@@ -143,16 +135,14 @@ section {
     font-size: small;
 }
 
-.project a:hover {
-    opacity: .5;
-}
-
 /* contact styling */
 .contact {
     text-align: center;
     margin: 10px;
 }
-
+#contactme {
+    text-align: center;
+}
 .contact a {
     text-decoration: none;
     font-size: 22px;
@@ -165,20 +155,9 @@ section {
     border-radius: 10px;
 }
 
-/* TODO: Need to improve media queries  */
-
 /* MEDIA QUERY FOR SMALLER SCREENS */
-@media screen and (max-width: 980px) {
-    .project {
-        display: block;
-    }
-
-    header nav ul {
-        display: block;
-        list-style: none;
-        justify-content: left;
-    }
-}
+/* @media screen and (max-width: 980px) {
+} */
 
 /* @media screen and (max-width: 768px) {
 }  */
