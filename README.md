@@ -14,6 +14,4 @@ stack developer building and deploying web applications.
 
 [Github Repository for Portfolio](https://github.com/bagl0025/portfolio.git)
 
-<a href="https://github.com/bagl0025/portfolio.git" target="_blank">Github Repository for Portfolio</a>
-
-<!-- need screenshot -->
+![Portfolio screenshot](./assets/images/portfolio.png)
