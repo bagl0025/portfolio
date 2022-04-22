@@ -1,0 +1,375 @@
+/* :root {
+    --primary-color: #114084;
+    --secondary-color: #3466AA;
+    --tertiary-color: #f1f1f1;
+} */
+
+:root {
+    --primary-color: #500000;
+    --secondary-color: #003c71;
+    --tertiary-color: #f6f6f6;
+    --accent-color: #d6d3c4;
+    --title-text: 55px; 
+    --large-text: 48px;
+    --small-text: 18px;
+    --tiny-text: 12px;
+    --border-size: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eaeaea;
+    color: var(--tertiary-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 10px;
+    font-size: var(--small-text);
+}
+
+ul{
+    list-style: none;
+}
+
+p {
+    font-size: var(--small-text);
+}
+
+a:hover {
+    opacity: .5;
+}
+
+/* Sectional Style */
+section {
+    /* display: flex; */
+    /* margin: 50px auto; */
+}
+
+/* #aboutme p {
+    text-align: left;
+} */
+
+.section-name {
+    text-align: center;
+    /* margin: 30px; */
+    /* width: 200px; */
+    /* text-align: right; */
+    font-size: var(--small-text);
+    /* flex: 1 25%; 
+    */
+}
+
+.section-name h2 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+.article {
+    /* padding: 20px 60px 20px 20px; */
+    /* border-left: 5px solid var(--tertiary-color); */
+    /* flex: 2 75%; */
+    text-align: center;
+}
+
+/* Header Style */
+header {
+    padding: 20px 0px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+    top: 0;
+}
+
+header a {
+    color: var(--secondary-color);
+    margin: 0px 10px;
+}
+
+.header-name {
+    padding: 10px 20px 10px 30px;
+    margin: 10px 10px 10px 0px;
+    background-color: var(--tertiary-color);
+    font-size: var(--title-text);
+    border-radius: 0px 20px 20px 0px;
+}
+
+header nav {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    display: inline;
+    justify-content: flex-end;
+}
+
+/* Hero Style */
+.hero {
+    background-image: url("../../assets/images/computer.jpeg");
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    width: 100%;
+    padding: 10%;    
+    /* text-align: center; */
+    /* color: var(--tertiary-color); */
+}
+
+.hero-img {
+    border: 5px solid var(--tertiary-color);
+    border-radius: 50%;
+    width: 30%;
+}
+
+.hero-title {
+    font-size: var(--title-text);
+}
+
+/* Work Section Style */
+.project-images {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+}
+
+.project-images a {
+    padding: 0px;
+}
+h2 {
+    text-align: center;
+}
+.project-images h3 {
+    font-size: var(--small-text);
+}
+
+.project-images p {
+    margin: 5px auto;
+    font-size: var(--tiny-text);
+}
+
+.image {
+    width: 42%;
+    height: 200px;
+    margin: 20px 20px 0px 20px;
+}
+
+/* .footer {
+    justify-content: center;
+} */
+.footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.image div {
+    padding: 10px 10px 10px 20px;
+    width: max-content;
+    max-width: 75%;
+    background-color: var(--tertiary-color);
+    position: relative;
+    bottom: 55%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--tertiary-color);
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* Contact Me */
+.contactme ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactme li {
+    margin: 10px;
+}
+
+/* Pseudo-Classes Start */
+.clickable a:hover {
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+    border: none;
+}
+
+.image a:hover img{
+    border-color: var(--primary-color);
+}
+
+.image a:hover ~ div {
+    background-color: var(--primary-color);
+}
+
+.image:first-child {
+    width: 98%;
+    height: 400px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 980px) {  
+    :root {
+        --small-text: 22px;
+    }
+
+    header {
+        justify-content: center;
+        top: 0;
+    }
+
+    header nav {
+        margin: 20px;
+    }
+
+    .header-name {
+        padding: 10px 20px;
+        margin: 10px;
+        border-radius: 20px;
+    }
+
+    .hero-info {
+        width: 90%;
+        padding: 2.5%;
+    }
+
+    .image {
+        width: 80%;
+        margin: 10px;
+    }
+
+    .image div {
+        bottom: 60%;
+    }
+
+    .contactme ul {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .contactme li {
+        margin: 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --title-text: 50px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+ 
+
+    section {
+        flex-direction: column;
+        align-items: center;
+        margin: 0px auto;
+    }
+
+    .section-name {
+        margin: 20px;
+        width: 100%;
+        text-align: center;
+        /* flex: 0; */
+        display: inline;
+    }
+
+    .article {
+        flex-direction: column;
+        padding: 20px;
+        /* border-top: 5px solid var(--tertiary-color); */
+        width: 80%;
+        /* border-left: 0; */
+        flex: 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    :root {
+        --large-text: 30px;
+        --small-text: 14px;
+        --title-text: 38px;
+    }
+
+    header nav {
+        margin: 20px 0px 10px 0px;
+    }
+
+    .section-name {
+        margin: 10px;
+    }
+
+
+    .image {
+        width: 85%;
+    }
+
+    .contactme li {
+        margin: 15px;
+    }
+
+    .article {
+        padding: 10px;
+        flex: 0;
+    }
+
+    .image:first-child {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    :root {
+        --large-text: 20px;
+        --small-text: 14px;
+        --title-text: 26px;
+    }
+
+    header {
+        padding: 10px 5px 5px 5px;
+    }
+
+    header nav {
+        margin: 10px 0px 5px 0px;
+        padding: 5px;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 8px 0px 8px 0px;
+    }
+
+    header nav ul li a {
+        padding: 5px;
+    }
+
+}

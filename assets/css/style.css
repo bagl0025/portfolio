@@ -1,166 +1,76 @@
+:root {
+    --aggie-maroon: #500000;
+    --aggie-blue: #003c71;
+    --aggie-gray-brown: #d6d3c4;
+    --aggie-gray-olive: #5b6236;
+    --aggie-brown: #998542;
+    --aggie-light-gray: #f6f6f6;
+    --aggie-med-gray: #eaeaea;
+    --aggie-dark-gray: #d1d1d1;
+}
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
-/* TODO: Need to check for non chrome browser support */
 
 body {
-    background-color: lightblue;
-    color: black;
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-/* header and heading settings */
-header {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: darkblue;
-    color: white;
-    align-items: center;
-}
-
-header h1 {
-    font-size: 36px;
-    margin: 10px;
-    flex: 1;
-}
-
-header nav {
-    flex: 1;
-}
-
-header nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: flex-end;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    padding: 10px 10px;
-    font-size: 24px;
+    background-color: var(--aggie-med-gray);
     color: white;
 }
 
-header nav ul li a:hover {
-    background: orange;
-    border-radius: 10px;
+.navbar {
+    background-color: var(--aggie-maroon);
 }
 
-.header-img {
-    vertical-align: middle;
-    width: 50px;
-    height: 65px;
-    border-radius: 50%;
-    margin: 10px;
-}
-
-h2 {
-    text-align: center;
-    color: black;
-}
-
-/* Hero Style, more of a subheader than hero*/
+/* Hero Style */
 .hero {
-    padding: 90px;
-    background-image: url("../images/computer.jpeg");
-    background-position: center;
-    background-size: cover;
+    background-image: url("../../assets/images/computer.jpeg");
 }
 
-.hero h2 {
-    text-align: end;    
-    color: red;
-}
-
-section {
-    padding: 20px;
-}
-
-/* about me settings */
-.about p {
-    margin: 10px 10px 0 10px;
-    text-align: justify;
-}
-
-/* settings for work section */
-.project {
-    display: flex;
-    flex-wrap: wrap;
-    /* border: green 2px solid; useful for visualizing how project boxes fit into main div*/
-}
-
-.project > div {  /* > prevent pass this to children divs, I think */
-    flex: 1 40%;
-    padding: 5px;
-    margin: 5px;
-    /* border: solid red; useful for visualizing individual project boxes */
-    height: 340px; /* setting WxH helps the image scaling */
-    width: 540px;
-}
-
-.project div:first-child {
-    flex: 1 80%;
-}
-  
-.project img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.project div a:hover {
-    opacity: .5;
-}
-
-.itembox {
-    display: inline-block;
-    position: relative;
-    background-color: blue;
-    color: white;
-    bottom: 100px;
-    left: 20px;
-    border-radius: 10px;
-    opacity: .75;
+.hero-title {
+    background-color: #003c71;
+    border-radius: 5px;
     padding: 10px;
 }
-
-.itembox h3 {
-    font-size: medium;
+.hero-img {
+    border: 5px solid var(--aggie-blue);
+    border-radius: 50%;
+    width: 14%;
+    margin: 20px;
 }
 
-.itembox h4 {
-    font-size: small;
+.tag {
+    padding: 10px 10px 10px 20px;
+    width: max-content;
+    max-width: 75%;
+    background-color: var(--aggie-blue);
+    position: relative;
+    bottom: 25%;
+    border-radius: 0px 10px 10px 0px;
 }
 
-/* contact styling */
-.contact {
-    text-align: center;
-    margin: 10px;
-}
-#contactme {
-    text-align: center;
-}
-.contact a {
-    text-decoration: none;
-    font-size: 22px;
-    padding: 0 20px 0 20px;
-    color: black;
+.project img {
+    border: 5px solid var(--aggie-blue);
+    border-radius: 20px;
 }
 
-.contact a:hover:not(.contact a:first-child) {
-    background: orange;
-    border-radius: 10px;
+.footer {
+    background-color: #500000;
+    padding-top: 10px;
 }
 
-/* MEDIA QUERY FOR SMALLER SCREENS */
-/* @media screen and (max-width: 980px) {
-} */
+.footer a:hover {
+    color: #5b6236;
+}
 
-/* @media screen and (max-width: 768px) {
-}  */
+.navbar a:hover {
+    color: #5b6236;
+}
 
-/* @media screen and (max-width: 575px) { 
-} */
+.about {
+    background-color: #500000;
+    margin: 0 10px 0 10px;
+    padding: 15px;
+    border-radius: 5px;
+}

@@ -3,43 +3,38 @@
     
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Professional Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel = "icon" src = "bike.ico" type = "image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css"/>
 </head>
 
-<body>
-    <!-- header info including navigation bar -->
-    <header>
-        <h1>
-            <img class="header-img" src="./assets/images/brian.jpg" alt="Profile photo" />Brian Bagley
-        </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#aboutme">About Me</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contactme">Contact Me</a>
-                </li>
-                <li>
-                    <a href="./assets/images/bagleycv_2021.pdf" target="_blank">Resume</a>
-                </li>
-            </ul>
+<body class="font-sans font-medium">
+    <!-- navigation bar -->
+        <nav class="navbar flex items-center justify-between flex-wrap">
+            <div class="flex fill current items-center text-2xl md:text-4xl">
+            <a class="header-name ml-5 mt-5 mb-5" href="/">Brian Bagley</a>
+            </div>
+            <div class="header-items flex md:text-xl">
+            <a href="#aboutme" class="block mt-4 mr-5 lg:inline-block lg:mt-0">About Me</a>
+            <a href="#work" class="block mt-4 mr-5 lg:inline-block lg:mt-0">Work</a>
+            <a href="#contactme" class="block mt-4 mr-5 lg:inline-block lg:mt-0">Contact Me</a>
+            <a href="./assets/images/bagleycv_2021.pdf" class="block mt-4 mr-5 lg:inline-block lg:mt-0" target="_blank">Resume</a>
+            </div>
         </nav>
-    </header>
-
-    <section class="hero">
-        <h2>Collection of Web Applications!</h2>
+    <!-- options 24 32 40 48 64 80 96 -->
+    <section class="hero bg-cover h-40 md:h-64 lg:h-80" >
+        <img class="hero-img inline align-middle" src="./assets/images/brian_avatar.png" alt="profile photo"/>
+        <span class="hero-title text-2xl md:text-4xl">Full Stack Developer</span>
     </section>
 
-    <section id="aboutme" class="about">
-            <h2>About Me</h2>
+    <!-- about me -->
+    <section class="text-center"> 
+            <h1 id="aboutme" class="text-black text-xl md:text-3xl mt-5 mb-5">About Me</h1>
         <div>
-            <p>
+            <p class="about text-justify"> 
                 I am a geophysicist with a background in seismology and X-ray Computed Tomography. I've spent the
                 past 10 years working in the Department of Earth and Environmental Sciences at the University of 
                 Minnesota as a researcher and geospatial developer. I'm looking forward to a new career as a full
@@ -48,67 +43,69 @@
         </div>
     </section>
 
-    <!-- work section -->
-    <section id="work">
-        <h2>Work</h2>
-            <div class="project">
-                <div>
-                    <a href="https://bagl0025.github.io/run-buddy/" target="_blank">
-                    <img src="./assets/images/runbuddy.jpeg" alt="Run Buddy web application" />
-                    <div class="itembox">
-                        <h3>Run Buddy</h3>
-                        <h4>HTML / CSS</h4>
-                    </div>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://bagl0025.github.io/urban-octo-telegram/" target="_blank">
-                    <img src="./assets/images/digital-marketing-meeting.jpg" alt="Horiseon web application" />
-                    <div class="itembox">
-                        <h3>Horiseon</h3>
-                        <h4>HTML / CSS</h4>
-                    </div>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://bagl0025.github.io/taskinator/" target="_blank">
-                    <img src="./assets/images/taskinator.png" alt="Taskinator web application" />
-                    <div class="itembox">
-                        <h3>Taskinator</h3>
-                        <h4>HTML / CSS / JS</h4>
-                    </div>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://bagl0025.github.io/PasswordGenerator/" target="_blank">
-                    <img src="./assets/images/passgen.png" alt="Password generator web application" />
-                    <div class="itembox">
-                        <h3>Password Generator</h3>
-                        <h4>HTML / CSS / JS</h4>
-                    </div>
-                    </a>
-                </div>
-                <div>
-                    <!-- <a href="https://bagl0025.github.io//" target="_blank"> -->
-                    <img src="./assets/images/comingsoon.jpg" alt="coming soon placeholder" />
-                    <div class="itembox">
-                        <h3>Quiz</h3>
-                        <h4>HTML / CSS / JS</h4>
-                    </div>
-                    <!-- </a>  -->
-                </div> 
-              </section>
+    <!-- work section -->         
+    <h1 class="text-black text-center text-xl md:text-3xl mt-5 mb-5" id="work">Work</h1>
+    <section class="text-center grid grid-cols-2 gap-5 ml-5 mr-5">                  
+        <div class="project hover:opacity-70 col-span-2">
+            <a href="https://bagl0025.github.io/run-buddy/" target="_blank">
+            <img src="./assets/images/runbuddy.jpeg" alt="run buddy web application"></a>
+            <div class="tag text-xs md:text-large">
+                <h2>Run Buddy</h2>
+                <p>HTML-CSS</p>
+            </div>
+        </div>
+    
+        <div class="project hover:opacity-70">
+            <a href="https://bagl0025.github.io/urban-octo-telegram/" target="_blank">
+            <img src="./assets/images/digital-marketing-meeting.jpg" alt="horiseon web application"></a>
+            <div class="tag text-xs md:text-large">
+                <h2>Horiseon</h2>
+                <p>HTML-CSS</p>
+            </div>
+        </div>
+    
+        <div class="project hover:opacity-70">
+            <a href="https://bagl0025.github.io/taskinator/" target="_blank">
+            <img src="./assets/images/weather.png" alt="weather web application"></a>
+            <div class="tag text-xs md:text-large">
+                <h2>Taskinator</h2>
+                <p>HTML-CSS-JS</p>
+            </div>
+        </div>
+
+        <div class="project hover:opacity-70">
+            <a href="https://bagl0025.github.io/PasswordGenerator/" target="_blank">
+            <img src="./assets/images/passgen.png" alt="password generator web application"></a>
+            <div class="tag text-xs md:text-large">
+                <h2>Password Generator</h2>
+                <p>HTML-CSS-JS</p>
+            </div>
+        </div>
+
+        <div class="project hover:opacity-70">
+            <a href="https://bagl0025.github.io/taskmaster-pro/" target="_blank">
+            <img src="./assets/images/taskmaster.png" alt="taskmaster pro web application"></a>
+            <div class="tag text-xs md:text-large">
+                <h2>Taskmaster-pro</h2>
+                <p>HTML-CSS-JS-Bootstrap</p>
+            </div>
+        </div> 
+    </section>
 
     <!-- Contact section -->
-    <section id="contactme">
-        <h2>Contact Me</h2>
-            <div class="contact"> 
-                <a href="tel:9522213695">952.221.3695</a>
-                <a href="mailto:bagley@umn.edu">bagley@umn.edu</a>
-                <a href="https://github.com/bagl0025" target="_blank">Github</a>
-                <a href="https://www.linkedin.com/in/briancbagley" target="_blank">LinkedIn</a>
-            </div>
-    </section>
-</body>
-
+    <footer id="contactme" class="footer">
+        <h3 class="text-center text-xl md:text-3xl">Contact Me</h3>
+        <div class="text-center text-medium md:text-xl"> 
+            <i class="block mt-4 mr-3 lg:inline-block fa fa-1x fa-phone aria-hidden='true'"></i>
+            <a class="block mt-4 mr-5 lg:inline-block" href="tel:9522213695">952.221.3695</a>
+            <i class="block mt-4 mr-3 lg:inline-block fa fa-1x fa-envelope-open-o aria-hidden='true'"></i>
+            <a class="block mt-4 mr-5 lg:inline-block" href="mailto:bagley@umn.edu">bagley@umn.edu</a>
+            <i class="block mt-4 mr-3 lg:inline-block fa fa-1x fa-github aria-hidden='true'"></i>
+            <a class="block mt-4 mr-5 lg:inline-block" href="https://github.com/bagl0025" target="_blank">Github</a>
+            <i class="block mt-4 mr-3 lg:inline-block fa fa-1x fa-linkedin aria-hidden='true'"></i>
+            <a class="block mt-4 mr-5 lg:inline-block mb-10" href="https://www.linkedin.com/in/briancbagley" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+    
+    </body>
 </html>
