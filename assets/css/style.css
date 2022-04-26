@@ -40,15 +40,17 @@ body {
     margin: 20px;
 }
 
-.tag {
-    padding: 10px 10px 10px 20px;
+/* .tag {
+    padding: 0 3px 0 3px;
     width: max-content;
-    max-width: 75%;
     background-color: var(--aggie-blue);
-    position: relative;
+    position: relative; 
     bottom: 25%;
-    border-radius: 0px 10px 10px 0px;
-}
+    border-radius: 5px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
 
 .project img {
     border: 5px solid var(--aggie-blue);
@@ -57,7 +59,8 @@ body {
 
 .footer {
     background-color: #500000;
-    padding-top: 10px;
+    padding: 20px 0 20px 0;
+    margin: 20px 0 20px 0;
 }
 
 .footer a:hover {
