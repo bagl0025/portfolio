@@ -20,17 +20,20 @@
 
 <body class="font-sans font-medium">
     <!-- navigation bar -->
-         <nav class="navbar"> <!-- navbar-expand-lg items-center justify-between"> -->
-            <div>
-                <a href="/">Brian Bagley</a>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Brian Bagley</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a href="#aboutme" class="nav-item nav-link">About Me</a>
-                <a href="#work" class="nav-item nav-link">Work</a>
-                <a href="#contactme" class="nav-item nav-link">Contact Me</a>
-                <a href="./assets/images/Brian_Bagley_Resume.pdf" class="nav-item nav-link" target="_blank">Resume</a>
-            </div>
-        </nav>
+                <a class="nav-item nav-link" href="#aboutme">About Me</a>
+                <a class="nav-item nav-link" href="#work">Work</a>
+                <a class="nav-item nav-link" href="#contactme">Contact Me</a>
+                <a class="nav-item nav-link" href="./assets/images/Brian_Bagley_Resume.pdf" target="_blank">Resume</a>
+            </div>    
+        </div>
+    </nav>
     <!-- hero -->
     <section class="hero">
         <img class="hero-img" src="./assets/images/brian_avatar.png" alt="profile photo"/>
@@ -144,15 +147,15 @@
     <!-- Contact section -->
     <footer id="contactme" class="footer">
         <h3 class="text-center">Contact Me</h3>
-        <div class="text-center justify-between"> 
-            <i class="mt-4 mr-3 fa fa-1x fa-phone aria-hidden='true'"></i>
-            <a class="mt-4 mr-5" href="tel:9522213695">952.221.3695</a>
-            <i class="mt-4 mr-3 fa fa-1x fa-envelope-open-o aria-hidden='true'"></i>
-            <a class="mt-4 mr-5" href="mailto:bagley@umn.edu">bagley@umn.edu</a>
-            <i class="mt-4 mr-3 fa fa-1x fa-github aria-hidden='true'"></i>
-            <a class="mt-4 mr-5" href="https://github.com/bagl0025" target="_blank">Github</a>
-            <i class="mt-4 mr-3 fa fa-1x fa-linkedin aria-hidden='true'"></i>
-            <a class="mt-4 mr-5 mb-10" href="https://www.linkedin.com/in/briancbagley" target="_blank">LinkedIn</a>
+        <div class="text-center"> 
+            <!-- <i class="mt-4 mr-3 fa fa-1x fa-phone aria-hidden='true'"></i>
+            <a class="mt-4 mr-5" href="tel:9522213695">952.221.3695</a> -->
+            <i class="mt-4 mr-2 fa fa-1x fa-envelope-open-o aria-hidden='true'"></i>
+            <a class="mt-4 mr-4" href="mailto:bagley@umn.edu">bagley@umn.edu</a>
+            <i class="mt-4 mr-2 fa fa-1x fa-github aria-hidden='true'"></i>
+            <a class="mt-4 mr-4" href="https://github.com/bagl0025" target="_blank">Github</a>
+            <i class="mt-4 mr-2 fa fa-1x fa-linkedin aria-hidden='true'"></i>
+            <a class="mt-4 mr-4 mb-10" href="https://www.linkedin.com/in/briancbagley" target="_blank">LinkedIn</a>
         </div>
     </footer>
     

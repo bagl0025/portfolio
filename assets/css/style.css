@@ -20,13 +20,22 @@ body {
 }
 
 .navbar {
-    background-color: var(--aggie-maroon);
+    background-color: var(--aggie-maroon) !important;
 }
 
-.navbar div a {
-    color: white;
-    font-size: x-large;
+.nav-link {
+    color: white !important;
+    font-size: larger;
+}
 
+.navbar-brand {
+    color: white !important;
+    font-size: xx-large;
+}
+
+.nav-link:hover {
+    color: #5b6236 !important;
+    font-weight: bold;
 }
 
 /* Hero Style */
@@ -40,8 +49,9 @@ body {
     background-color: #003c71;
     border-radius: 5px;
     padding: 10px;
-    font-size: xx-large;
+    font-size: x-large;
 }
+
 .hero-img {
     border: 5px solid var(--aggie-blue);
     border-radius: 50%;
@@ -66,14 +76,15 @@ body {
     background-color: #500000;
     padding: 20px 0 20px 0;
     margin: 20px 0 20px 0;
+    font-size: larger;
+}
+
+.footer a {
+    text-decoration: none;
 }
 
 .footer div a:hover {
-    color: #5b6236;
-}
-
-.navbar a:hover {
-    color: #5b6236;
+    color: #5b6236 !important;
 }
 
 .about {
@@ -98,4 +109,8 @@ body {
 #contactme div a {
     color: white;
     font-size: larger;
+}
+
+@media (min-width: 544px) {  
+    .hero-title{font-size: xx-large;} 
 }
