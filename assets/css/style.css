@@ -23,15 +23,24 @@ body {
     background-color: var(--aggie-maroon);
 }
 
+.navbar div a {
+    color: white;
+    font-size: x-large;
+
+}
+
 /* Hero Style */
 .hero {
     background-image: url("../../assets/images/computer.jpeg");
+    background-size: cover;
+    height: 50vh;
 }
 
 .hero-title {
     background-color: #003c71;
     border-radius: 5px;
     padding: 10px;
+    font-size: xx-large;
 }
 .hero-img {
     border: 5px solid var(--aggie-blue);
@@ -40,21 +49,17 @@ body {
     margin: 20px;
 }
 
-/* .tag {
-    padding: 0 3px 0 3px;
-    width: max-content;
-    background-color: var(--aggie-blue);
-    position: relative; 
-    bottom: 25%;
+.card {
+    color: black;
     border-radius: 5px;
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-} */
+    border-color: black;
+    padding: 5px;
+}
 
-.project img {
-    border: 5px solid var(--aggie-blue);
-    border-radius: 20px;
+.row {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .footer {
@@ -63,7 +68,7 @@ body {
     margin: 20px 0 20px 0;
 }
 
-.footer a:hover {
+.footer div a:hover {
     color: #5b6236;
 }
 
@@ -76,4 +81,21 @@ body {
     margin: 0 10px 0 10px;
     padding: 15px;
     border-radius: 5px;
+}
+
+#work {
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+#aboutme {
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+#contactme div a {
+    color: white;
+    font-size: larger;
 }
