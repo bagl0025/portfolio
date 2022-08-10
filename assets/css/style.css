@@ -40,7 +40,7 @@ body {
 
 /* Hero Style */
 .hero {
-    background-image: url("../../assets/images/computer.jpeg");
+    background-image: url("../../assets/images/computer-min.jpeg");
     background-size: cover;
     height: 50vh;
 }
